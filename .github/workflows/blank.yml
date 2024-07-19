@@ -22,7 +22,7 @@ jobs:
 
 
   Git-Versioning:
-    uses: gitsecrat/.github/workflows/blank.yml 
+    uses: MayurPatange/gitsecrat/.github/workflows/blank.yml 
 
 
 
