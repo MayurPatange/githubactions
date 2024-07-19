@@ -23,8 +23,7 @@ jobs:
 
   Git-Versioning:
     uses: gitsecrat/.github/workflows/blank.yml 
-    with:
-      runner-name: ubuntu-latest
+
 
 
 
