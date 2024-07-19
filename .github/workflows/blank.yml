@@ -20,14 +20,11 @@ jobs:
 
       - uses : actions/checkout@v4
 
-      - name: clone the repo
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          git clone https://github.com/awslabs/git-secrets.git
-          cd git-secrets
-          sudo make install
-          git secrets --scan
+
+  Git-Versioning:
+    uses: gitsecrat/.github/workflows/blank.yml 
+    with:
+      runner-name: ubuntu-latest
 
 
 
