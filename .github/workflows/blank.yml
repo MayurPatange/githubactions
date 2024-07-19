@@ -16,11 +16,20 @@ jobs:
     runs-on: [ubuntu-latest] 
 
     steps:
+
+
+      - uses : actions/checkout@v4
+
       - name: clone the repo
         run: |
-            echo Add other actions to build,
-            echo test, and deploy your project.
-      - uses : actions/checkout@v4
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          git clone https://github.com/awslabs/git-secrets.git
+          cd git-secrets
+          make install
+          git secrets -–scan
+
+
 
 
 # name: CI
